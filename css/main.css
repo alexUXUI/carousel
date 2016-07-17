@@ -1,68 +1,73 @@
 
-   body {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     height: 600px;
-   }
+body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 600px;
+}
 
-   .products {
-     display: flex;
-     flex-direction: row;
-   }
+.products {
+ display: flex;
+ flex-direction: row;
+}
 
-   .descriptions {
-     width: 40%;
-     padding: 5%;
-   }
+.descriptions {
+ width: 40%;
+ padding: 5%;
+}
 
-   .box {
-     height:400px;
-     width:320px;
-     margin:auto;
-     background-color:gray
-   }
+.box {
+ height:400px;
+ width:320px;
+ margin:auto;
+ background-color:gray
+}
 
-   .box .slide{
-     height:350px;
-     width:300px;
-     position:absolute
-   }
+.box .slide{
+ height:350px;
+ width:300px;
+ position:absolute
+}
 
-   .box .slide:nth-child(-n+1){
-     background-color:coral;
-     z-index:2
-   }
+.box .slide:nth-child(-n+1){
+ background-color:coral;
+ z-index:2
+}
 
-  h2:nth-child(-n+1):hover { color: coral; }
-  h2:nth-child(n+2):hover { color: gold; }
-  h2:nth-child(3):hover { color: aqua; }
+h2:nth-child(-n+1):hover { color: coral; }
+h2:nth-child(n+2):hover { color: gold; }
+h2:nth-child(3):hover { color: aqua; }
 
-   .box .slide:nth-child(2){
-     background-color:aqua;
-     margin-left:10px;
-     z-index:1
-   }
+h2 {
+  width: 180px;
+}
 
-   .box .slide:nth-child(3){
-     background-color:gold;
-     margin-left:20px
-   }
+.box .slide:nth-child(2){
+ background-color:aqua;
+ margin-left:10px;
+ z-index:1
+}
 
-   .box .dots{
-     width:23%;
-     margin:auto;
-     padding-top:340px;
-     color:#000;
-     font-size:50px;
-     z-index:3;
-     height:50px;
-     display:flex;
-     flex-direction:row;
-     justify-content:space-between
-   }
+.box .slide:nth-child(3){
+ background-color:gold;
+ margin-left:20px
+}
 
-  .dot:nth-child(2):hover{ color:aqua }
-  .dot:nth-child(3):hover{ color:gold }
-  .dot:nth-child(-n+1):hover{ color:coral }
+.box .dots{
+ width:23%;
+ margin:auto;
+ padding-top:340px;
+ color:#000;
+ font-size:50px;
+ z-index:3;
+ height:50px;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between
+}
+
+.dot:nth-child(-n+1){ color:coral }
+.dot:nth-child(2):hover{ color:aqua }
+.dot:nth-child(3):hover{ color:gold }
+.dot:nth-child(-n+1):hover{ color:coral }
