@@ -1,0 +1,66 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 600px;
+   }
+
+   .products {
+     display: flex;
+     flex-direction: row;
+   }
+
+   .descriptions {
+     width: 40%;
+     padding: 5%;
+   }
+
+   .box {
+     height:400px;
+     width:320px;
+     margin:auto;
+     background-color:gray
+   }
+
+   .box .slide{
+     height:350px;
+     width:300px;
+     position:absolute
+   }
+
+   .box .slide:nth-child(-n+1){
+     background-color:coral;
+     z-index:2
+   }
+
+   .box .slide:nth-child(2){
+     background-color:aqua;
+     margin-left:10px;
+     z-index:1
+   }
+
+   .box .slide:nth-child(3){
+     background-color:gold;
+     margin-left:20px
+   }
+
+   .box .dots{
+     width:23%;
+     margin:auto;
+     padding-top:340px;
+     color:#000;
+     font-size:50px;
+     z-index:3;
+     height:50px;
+     display:flex;
+     flex-direction:row;
+     justify-content:space-between
+   }
+
+   .box .dots .dot:hover{color:#fff}
